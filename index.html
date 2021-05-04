@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation-menu">
+        <button class="btn" type="button">Info</button>
+        <button class="btn" type="button" data-clear>Clear</button>
+        <button class="btn" type="button" data-color-piker>ColorPiker</button>
+        <ul class="color-container" data-color-container></ul>
+      </div>
+      <div class="canvas" data-action="canvas">
+      </div>
+      
+    </div>
+    
+    <div class="position-piker">
+      <span class="piker-x">X:</span>
+      <span class="piker-y">| Y:</span>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

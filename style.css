@@ -1,0 +1,107 @@
+ul {
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: lightgray;
+}
+
+.container {
+  padding: 15px;
+}
+
+.canvas {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  background-color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 50%);
+
+  cursor: url(penMin.png), pointer;
+}
+
+.dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: black;
+}
+
+.navigation-menu {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  margin-right: 20px;
+  color: thistle;
+  background-color: indigo;
+  text-align: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+  border-color: transparent;
+
+  cursor: pointer;
+  transition: all linear 200ms;
+}
+
+.btn:hover,
+.btn:focus {
+  color: indigo;
+  background-color: lightcoral;
+  box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 50%);
+}
+
+/* .color-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 5px;
+  height: 50px;
+  width: 900px;
+  background-color: white;
+} */
+
+.position-piker {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  padding-left: 15px;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.piker-x {
+  display: inline-block;
+  width: 60px;
+}
+
+.color-container {
+  opacity: 0;
+  display: grid;
+  width: 900px;
+  grid-template-columns: repeat(30, 20px);
+  grid-auto-rows: 20px;
+  grid-gap: 6px;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.color-container.is-open {
+  opacity: 1;
+}
+
+.color-item {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
